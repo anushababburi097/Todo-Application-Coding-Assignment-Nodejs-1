@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos/
+//Authorization: Bearer json
+
+###
+GET  http://localhost:3000/todos/1/ 
+//Authorization: Bearer json
+
+###
+GET  http://localhost:3000/agenda/
+###
+POST http://localhost:3000/todos/ 
+Content-Type: application/json
+
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-2-22"
+}
+
+###
+PUT http://localhost:3000/todos/9/
+
+###
+DELETE  http://localhost:3000/todos/7/
